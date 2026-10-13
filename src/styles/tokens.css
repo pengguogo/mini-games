@@ -1,0 +1,179 @@
+/**
+ * tokens.css - 设计令牌系统
+ * 用途: 集中定义配色、圆角、阴影、间距、字号、动效等设计变量,
+ *       所有组件和页面必须通过 var(--xxx) 引用,禁止硬编码色值。
+ * 作者: english-app
+ * 创建日期: 2026-07-20
+ */
+
+:root {
+  /* 3D 展台与模型材质：渲染器也从这些令牌读取颜色。 */
+  --model-stage: #edf4f4;
+  --model-red: #b93d42;
+  --model-dark: #263640;
+  --model-brass: #d9ad60;
+  --model-steel: #93a5ad;
+  --model-glass: #a6dce4;
+  --model-wood: #85725e;
+  --model-ground: #d5e2df;
+  /* 品牌半透明表面 */
+  --brand-surface-strong: rgba(255, 255, 255, 0.96);
+  --brand-surface-card: rgba(255, 255, 255, 0.86);
+  --brand-surface-badge: rgba(255, 255, 255, 0.82);
+  --brand-surface-button: rgba(255, 255, 255, 0.78);
+  --brand-surface-soft: rgba(255, 255, 255, 0.7);
+  --color-primary-bg: rgba(107, 124, 255, 0.1);
+  --color-transparent: transparent;
+  /* ===== 配色令牌 ===== */
+  /* 主色: 蓝紫色,用于主按钮、导航、链接 */
+  --color-primary: #6B7CFF;
+  --color-primary-hover: #5568D3;
+  --color-primary-light: #8A96FF;
+
+  /* 强调色: 明黄色,用于星星、奖励、CTA */
+  --color-accent: #FFD93D;
+
+  /* 成功色: 绿色,用于完成、正确反馈 */
+  --color-success: #4CD964;
+  --color-success-hover: #43A047;
+
+  /* 警示色: 珊瑚红,用于错误、未解锁 */
+  --color-warning: #FF6B6B;
+
+  /* 衍生浅底色: 用于正确/错误反馈背景（带透明度） */
+  --color-success-bg: rgba(76, 217, 100, 0.1);
+  --color-warning-bg: rgba(255, 107, 107, 0.1);
+
+  /* 柔和色: 用于装饰、场景 */
+  --color-pink: #FFB6C1;
+  --color-sky: #87CEEB;
+
+  /* 橙色: 用于评分、录音 */
+  --color-orange: #FF9800;
+  --color-orange-hover: #F57C00;
+
+  /* ===== 游戏专区 ===== */
+  --game-board: #E7B96B;
+  --game-board-edge: #9B642E;
+  --game-grid: rgba(51, 51, 51, 0.58);
+  --game-stone-black: #202124;
+  --game-stone-white: #FAFAFA;
+  --game-sky: #DDF3FF;
+  --game-track: #87CEEB;
+  --game-red: #E94848;
+  --game-jungle: #B7D99A;
+  --game-path: #7BAE62;
+  --game-event: #FFF0B8;
+
+  /* ===== 文字层级 ===== */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --text-disabled: #767676;
+
+  /* ===== 背景层 ===== */
+  --bg-page: #FFF8F0;
+  --bg-card: #FFFFFF;
+  --bg-muted: #F5F5F7;
+
+  /** 主色背景上的文字色（白色） */
+  --text-on-primary: #FFFFFF;
+  --text-on-primary-muted: rgba(255, 255, 255, 0.9);
+
+  /* ===== 边框 ===== */
+  --border-light: #E8E8EC;
+  --border-muted: #F0F0F2;
+  --focus-ring: rgba(107, 124, 255, 0.32);
+
+  /* ===== 圆角令牌 ===== */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* ===== 阴影令牌 ===== */
+  --shadow-card: 0 4px 16px rgba(107, 124, 255, 0.08);
+  --shadow-hover: 0 8px 24px rgba(107, 124, 255, 0.15);
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-text: 0 2px 10px rgba(10, 56, 108, 0.34);
+
+  /* ===== 间距令牌(8 倍数体系) ===== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ===== 字号令牌 ===== */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 24px;
+  --text-xl: 32px;
+
+  /* ===== 字重令牌 ===== */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* ===== 字体族 ===== */
+  --font-sans: 'PingFang SC', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+
+  /* ===== 动效令牌 ===== */
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 300ms;
+
+  /* ===== 吉祥物 Mimi 视觉令牌 ===== */
+  /* 贴纸描边与柔光：用于让 jpg 也更“像贴纸” */
+  --mascot-outline: rgba(255, 255, 255, 0.95);
+  --mascot-outline-soft: rgba(255, 255, 255, 0.65);
+  --mascot-glow: rgba(255, 217, 61, 0.35);
+
+  /* 吉祥物动效（更慢更柔，避免喧宾夺主） */
+  --duration-mascot-float: 3200ms;
+  --duration-mascot-breathe: 2400ms;
+  --duration-mascot-celebrate: 900ms;
+
+  /* ===== 渐变令牌 ===== */
+  --gradient-primary: linear-gradient(135deg, #6B7CFF 0%, #8A96FF 100%);
+  --gradient-warm: linear-gradient(135deg, #FFF3E0 0%, #FFF8E1 100%);
+  --gradient-success: linear-gradient(135deg, #4CD964 0%, #5BDB73 100%);
+  --gradient-adventure: linear-gradient(120deg, #FFF8CF 0%, #FFF0D8 55%, #FFE4E4 100%);
+  --gradient-fruit-quest: linear-gradient(145deg, #FFFDF2 0%, #FFF4DC 100%);
+  --fruit-border: rgba(255, 152, 0, 0.35);
+  --overlay-dark: rgba(50, 50, 50, 0.72);
+  /* ===== 成长照片灯箱 ===== */
+  /* 灯箱遮罩(比通用弹罩更深,突出照片)与悬浮按钮半透明白底 */
+  --lb-veil: rgba(20, 20, 20, 0.92);
+  --lb-btn-bg: rgba(255, 255, 255, 0.22);
+  --shadow-fruit-pulse: 0 8px 24px rgba(255, 152, 0, 0.28);
+
+  /* ===== 汪汪队主题视觉 ===== */
+  --paw-banner-fallback: #36B7EA;
+  --paw-banner-overlay: linear-gradient(90deg, rgba(6, 67, 126, 0.72) 0%, rgba(6, 67, 126, 0.35) 35%, rgba(6, 67, 126, 0) 62%);
+  --paw-banner-overlay-mobile: linear-gradient(180deg, rgba(6, 67, 126, 0.76) 0%, rgba(6, 67, 126, 0.28) 52%, rgba(6, 67, 126, 0) 78%);
+  --paw-badge-bg: rgba(0, 91, 173, 0.72);
+  --paw-badge-border: rgba(255, 255, 255, 0.42);
+
+  /* ===== 学科主题色 ===== */
+  /* 英语: 蓝紫（复用主色） */
+  --subject-english: #6B7CFF;
+  /* 语文: 朱砂红 */
+  --subject-chinese: #FF7043;
+  /* 数学: 青绿 */
+  --subject-math: #26A69A;
+  /* 课外: 紫罗兰 */
+  --subject-extracurricular: #7E57C2;
+
+  /* ===== 交互尺寸 ===== */
+  --touch-target: 44px;
+  --content-max: 960px;
+  --nav-height: 60px;
+}

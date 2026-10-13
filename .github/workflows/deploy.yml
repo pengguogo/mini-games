@@ -1,0 +1,55 @@
+name: Deploy mini games
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['video/**', '**.md']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: mini-games-production
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Test and build
+        run: |
+          npm ci
+          npm test
+          npm run build
+          echo '${{ github.sha }}' > dist/version.txt
+      - name: Check deployment secrets
+        env:
+          DEPLOY_HOST: ${{ secrets.ALIYUN_HOST }}
+          DEPLOY_USER: ${{ secrets.ALIYUN_USER }}
+          DEPLOY_PASSWORD: ${{ secrets.ALIYUN_PASSWORD }}
+        run: |
+          test -n "$DEPLOY_HOST" && test -n "$DEPLOY_USER" && test -n "$DEPLOY_PASSWORD" || {
+            echo 'Configure ALIYUN_HOST, ALIYUN_USER, ALIYUN_PASSWORD in repository Actions Secrets.'
+            exit 1
+          }
+      - name: Upload release
+        uses: appleboy/scp-action@ff85246acaad7bdce478db94a363cd2bf7c90345
+        with:
+          host: ${{ secrets.ALIYUN_HOST }}
+          username: ${{ secrets.ALIYUN_USER }}
+          password: ${{ secrets.ALIYUN_PASSWORD }}
+          source: 'dist/*'
+          target: /var/www/mini-games/releases/${{ github.sha }}
+          strip_components: 1
+      - name: Activate and verify release
+        uses: appleboy/ssh-action@0ff4204d59e8e51228ff73bce53f80d53301dee2
+        env:
+          GITHUB_SHA: ${{ github.sha }}
+        with:
+          host: ${{ secrets.ALIYUN_HOST }}
+          username: ${{ secrets.ALIYUN_USER }}
+          password: ${{ secrets.ALIYUN_PASSWORD }}
+          envs: GITHUB_SHA
+          script_path: scripts/deploy.sh
