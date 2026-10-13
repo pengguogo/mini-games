@@ -1,6 +1,6 @@
 # 鹏哥小游戏
 
-从 [Mimi 启蒙乐园](https://github.com/pengguogo/english-app) 抽离的独立浏览器小游戏专区。9 款游戏，无广告，无需登录；纯静态部署，不依赖学习平台或后端。
+从 [Mimi 启蒙乐园](https://github.com/pengguogo/english-app) 抽离并扩展的独立浏览器小游戏专区。11 款游戏，无广告，无需登录；纯静态部署，不依赖学习平台或后端。
 
 部署入口：http://game.penggeai.com （已上线）
 
@@ -13,7 +13,7 @@ npm run build
 npm run preview
 ```
 
-童话拼图、几何拼图、动物翻翻乐、找规律、井字棋、五子棋、飞行棋、蛇梯冒险棋、九路围棋。棋类模式取决于各上游实现；不提供联网对战。围棋为棋盘编辑与落子，不承诺自动裁判或 AI。
+童话拼图、几何拼图、动物翻翻乐、找规律、井字棋、五子棋、飞行棋、蛇梯冒险棋、九路围棋、经典斗地主、麻将连连看。斗地主为玩家对两位本地 AI 的叫分制单机玩法；麻将连连看是麻将牌配对消除，不是四人麻将。所有游戏均不提供充值、下注或联网房间。围棋为棋盘编辑与落子，不承诺自动裁判或 AI。
 
 首页插画由源项目 PNG 转为 WebP，约 227 KB；首页 JS 约 39 KB gzip。每款游戏按路由加载，首页不会下载第三方棋盘引擎。实际加载速度取决于网络、设备与服务器。
 
@@ -31,7 +31,7 @@ DNS：添加 game 的 A 记录指向 ALIYUN_HOST，按原项目服务器 IP 配�
 
 本项目遵循源项目 LICENSE。第三方组件保持各自许可证，详见 docs 与 public/vendor/*/LICENSE。BesoGo 棋子图片为 Andreas Tarnowsky 的 go-assets，CC BY-SA 4.0。
 
-飞行棋使用 ZTMYO/MinimalistAeroplaneChess（当前组件目录为 aeroplane-chess）；蛇梯冒险棋使用 OpenBoard Arcade。docs/game-open-source-sources.md 保留源项目历史来源记录，实际入口以 src/views 中的路径为准。
+斗地主使用 Hanbin-Zhang-JPN/classic-doudizhu；麻将连连看使用 ScriptRaccoon/mahjong-solitaire，并把 jQuery 固定为本地 3.5.1 MIT 文件。飞行棋使用 ZTMYO/MinimalistAeroplaneChess（当前组件目录为 aeroplane-chess）；蛇梯冒险棋使用 OpenBoard Arcade。`docs/game-open-source-sources.md` 保留固定提交、许可证与未接入候选的审计记录，实际入口以 `src/views` 中的路径为准。
 
 ## 本期视频
 
