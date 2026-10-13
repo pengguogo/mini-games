@@ -1,0 +1,135 @@
+{
+  "errors": [],
+  "badResponses": [],
+  "initialRequests": [
+    "http://127.0.0.1:5180/",
+    "http://127.0.0.1:5180/assets/index-BnxSCtei.js",
+    "http://127.0.0.1:5180/assets/index-CfYeOctL.css",
+    "http://127.0.0.1:5180/images/games/woodland-puzzle.webp"
+  ],
+  "requests": [
+    "http://127.0.0.1:5180/",
+    "http://127.0.0.1:5180/assets/index-BnxSCtei.js",
+    "http://127.0.0.1:5180/assets/index-CfYeOctL.css",
+    "http://127.0.0.1:5180/images/games/woodland-puzzle.webp",
+    "http://127.0.0.1:5180/assets/PicturePuzzleView-DYGE_2V1.js",
+    "http://127.0.0.1:5180/assets/AppButton-DCm6T6iC.js",
+    "http://127.0.0.1:5180/assets/AppButton-BSH9nu8K.css",
+    "http://127.0.0.1:5180/assets/kidsGames-DU17hgfV.js",
+    "http://127.0.0.1:5180/assets/BackBar-BwfdBo-V.js",
+    "http://127.0.0.1:5180/assets/BackBar-su9duv9W.css",
+    "http://127.0.0.1:5180/assets/kidsGames-B-TzAkvk.css",
+    "http://127.0.0.1:5180/assets/PicturePuzzleView-D48TzAsu.css",
+    "http://127.0.0.1:5180/assets/MemoryMatchView-BfJKhlfM.js",
+    "http://127.0.0.1:5180/assets/MemoryMatchView-CdXvhrVw.css",
+    "http://127.0.0.1:5180/assets/TicTacToeView-C1_71lGh.js",
+    "http://127.0.0.1:5180/assets/TicTacToeView-Bn07Ymwt.css",
+    "http://127.0.0.1:5180/assets/GomokuView-Z6C3x_gq.js",
+    "http://127.0.0.1:5180/assets/GomokuView-DAu96_py.css"
+  ],
+  "metrics": {
+    "navigation": {
+      "name": "http://127.0.0.1:5180/",
+      "entryType": "navigation",
+      "startTime": 0,
+      "duration": 117.1000000089407,
+      "navigationId": 8659,
+      "initiatorType": "navigation",
+      "deliveryType": "",
+      "nextHopProtocol": "http/1.1",
+      "renderBlockingStatus": "non-blocking",
+      "contentType": "text/html",
+      "contentEncoding": "",
+      "workerStart": 0,
+      "workerRouterEvaluationStart": 0,
+      "workerCacheLookupStart": 0,
+      "workerMatchedSourceType": "",
+      "workerFinalSourceType": "",
+      "redirectStart": 0,
+      "redirectEnd": 0,
+      "fetchStart": 4.799999997019768,
+      "domainLookupStart": 4.799999997019768,
+      "domainLookupEnd": 4.799999997019768,
+      "connectStart": 4.799999997019768,
+      "secureConnectionStart": 0,
+      "connectEnd": 4.799999997019768,
+      "requestStart": 5.9000000059604645,
+      "responseStart": 11.5,
+      "firstInterimResponseStart": 0,
+      "finalResponseHeadersStart": 11.5,
+      "responseEnd": 12.600000008940697,
+      "transferSize": 814,
+      "encodedBodySize": 514,
+      "decodedBodySize": 514,
+      "responseStatus": 200,
+      "serverTiming": [],
+      "unloadEventStart": 0,
+      "unloadEventEnd": 0,
+      "domInteractive": 23.700000002980232,
+      "domContentLoadedEventStart": 59.20000000298023,
+      "domContentLoadedEventEnd": 59.20000000298023,
+      "domComplete": 117.1000000089407,
+      "loadEventStart": 117.1000000089407,
+      "loadEventEnd": 117.1000000089407,
+      "type": "navigate",
+      "redirectCount": 0,
+      "activationStart": 0,
+      "criticalCHRestart": 0,
+      "notRestoredReasons": null,
+      "confidence": {
+        "randomizedTriggerRate": 0.4994798,
+        "value": "high"
+      }
+    },
+    "resources": [
+      {
+        "name": "http://127.0.0.1:5180/assets/index-BnxSCtei.js",
+        "transferSize": 39571,
+        "duration": 15.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:5180/assets/index-CfYeOctL.css",
+        "transferSize": 3056,
+        "duration": 12.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:5180/images/games/woodland-puzzle.webp",
+        "transferSize": 227090,
+        "duration": 3
+      },
+      {
+        "name": "http://127.0.0.1:5180/favicon.ico",
+        "transferSize": 300,
+        "duration": 1.2000000029802322
+      }
+    ]
+  },
+  "otherGames": [
+    {
+      "route": "shape-puzzle",
+      "iframe": 1,
+      "body": "返回\n几何转转拼图\n\n在小格里上下滑动，拼出完整图案。先从四角星开始吧！"
+    },
+    {
+      "route": "pattern-play",
+      "iframe": 0,
+      "body": "返回\n图案接龙\n\n图案会按照同一个顺序重复。找一找，应该接上哪一个？\n\n第 1 题\n\n🍎\n🦋\n🍎\n🦋\n🍎\n🦋\n？\n\n观察前面的图案，下一个是什么？\n\n🌸\n🦋\n🍎\n下一题"
+    },
+    {
+      "route": "flight-chess",
+      "iframe": 1,
+      "body": "返回\n中国飞行棋 · 极简飞行棋\n\n中国飞行棋规则 · 人机与本地多人 · 跳飞动画 · AI 托管 · 音效"
+    },
+    {
+      "route": "adventure-chess",
+      "iframe": 1,
+      "body": "返回\n蛇梯冒险棋\n\n动态蛇梯棋盘 · 角色移动 · 骰子音效 · 胜利庆祝"
+    },
+    {
+      "route": "go",
+      "iframe": 1,
+      "body": "返回\n九路围棋 · BesoGo\n\n真实棋子纹理 · 落子阴影 · 棋谱回退 · 死活标记"
+    }
+  ],
+  "mobileOverflow": true
+}

@@ -1,0 +1,49 @@
+
+> pengge-mini-games@0.1.0 test
+> node --test test/*.test.js
+
+TAP version 13
+# Subtest: 洗牌保留所有配对，且不修改原数组
+ok 1 - 洗牌保留所有配对，且不修改原数组
+  ---
+  duration_ms: 0.987334
+  ...
+# Subtest: 井字棋识别全部八条获胜线和两种棋子
+ok 2 - 井字棋识别全部八条获胜线和两种棋子
+  ---
+  duration_ms: 0.222833
+  ...
+# Subtest: 井字棋区分未结束、平局和最后一格获胜
+ok 3 - 井字棋区分未结束、平局和最后一格获胜
+  ---
+  duration_ms: 0.07775
+  ...
+# Subtest: 三种图案规律提供唯一且正确的下一项
+ok 4 - 三种图案规律提供唯一且正确的下一项
+  ---
+  duration_ms: 0.69775
+  ...
+# Subtest: 每种难度保留所有图片块且初始不通关
+ok 5 - 每种难度保留所有图片块且初始不通关
+  ---
+  duration_ms: 1.204334
+  ...
+# Subtest: 交换不改变源数组，交换两次恢复
+ok 6 - 交换不改变源数组，交换两次恢复
+  ---
+  duration_ms: 0.08875
+  ...
+# Subtest: 提示不破坏已归位图块，并能在有限次内通关
+ok 7 - 提示不破坏已归位图块，并能在有限次内通关
+  ---
+  duration_ms: 0.570834
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 45.695875

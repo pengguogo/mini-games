@@ -1,0 +1,37 @@
+
+> pengge-mini-games@0.1.0 build
+> vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 55 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               0.51 kB │ gzip:  0.41 kB
+dist/assets/TicTacToeView-Bn07Ymwt.css        0.19 kB │ gzip:  0.15 kB
+dist/assets/MemoryMatchView-CdXvhrVw.css      0.20 kB │ gzip:  0.15 kB
+dist/assets/PatternPlayView-CT7I04cE.css      0.34 kB │ gzip:  0.22 kB
+dist/assets/ShapePuzzleView-REvo58jO.css      0.45 kB │ gzip:  0.28 kB
+dist/assets/AdventureChessView-BN3mKpQp.css   0.61 kB │ gzip:  0.32 kB
+dist/assets/GoView-baFr0Tby.css               0.61 kB │ gzip:  0.31 kB
+dist/assets/FlightChessView-Bx035aZu.css      0.75 kB │ gzip:  0.34 kB
+dist/assets/kidsGames-B-TzAkvk.css            0.91 kB │ gzip:  0.40 kB
+dist/assets/BackBar-su9duv9W.css              0.97 kB │ gzip:  0.44 kB
+dist/assets/GomokuView-DAu96_py.css           1.33 kB │ gzip:  0.54 kB
+dist/assets/AppButton-BSH9nu8K.css            1.73 kB │ gzip:  0.58 kB
+dist/assets/PicturePuzzleView-D48TzAsu.css    1.81 kB │ gzip:  0.61 kB
+dist/assets/index-CfYeOctL.css                7.50 kB │ gzip:  2.76 kB
+dist/assets/AppButton-DCm6T6iC.js             0.53 kB │ gzip:  0.34 kB
+dist/assets/ShapePuzzleView-BJu9RzIP.js       0.65 kB │ gzip:  0.51 kB
+dist/assets/GoView-qwblNU1i.js                0.68 kB │ gzip:  0.52 kB
+dist/assets/AdventureChessView-DSOhz7JU.js    0.71 kB │ gzip:  0.54 kB
+dist/assets/FlightChessView-DpPKB2pO.js       0.74 kB │ gzip:  0.56 kB
+dist/assets/BackBar-BwfdBo-V.js               0.89 kB │ gzip:  0.59 kB
+dist/assets/kidsGames-DU17hgfV.js             1.04 kB │ gzip:  0.66 kB
+dist/assets/TicTacToeView-C1_71lGh.js         1.47 kB │ gzip:  0.99 kB
+dist/assets/PatternPlayView-P9p7UScV.js       1.53 kB │ gzip:  0.93 kB
+dist/assets/GomokuView-Z6C3x_gq.js            1.85 kB │ gzip:  1.16 kB
+dist/assets/MemoryMatchView-BfJKhlfM.js       2.21 kB │ gzip:  1.22 kB
+dist/assets/PicturePuzzleView-DYGE_2V1.js     3.47 kB │ gzip:  1.89 kB
+dist/assets/index-BnxSCtei.js                98.24 kB │ gzip: 39.27 kB
+✓ built in 558ms

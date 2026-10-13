@@ -1,0 +1,122 @@
+{
+  "initialRequests": [
+    "http://game.penggeai.com/",
+    "http://game.penggeai.com/assets/index-BnxSCtei.js",
+    "http://game.penggeai.com/assets/index-CfYeOctL.css",
+    "http://game.penggeai.com/images/games/woodland-puzzle.webp"
+  ],
+  "errors": [],
+  "badResponses": [],
+  "games": [
+    {
+      "game": "picture-puzzle",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/picture-puzzle",
+          "text": "返回\n童话拼图\nWOODLAND STORIES\n拼出森林里的小美好\n\n点一块，再点另一块，就能交换位置。\n\n4 块\n9 块\n16 块\n\n归位 1 / 4 · 交换 0 次\n\n不着"
+        }
+      ]
+    },
+    {
+      "game": "shape-puzzle",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/shape-puzzle",
+          "text": "返回\n几何转转拼图\n\n在小格里上下滑动，拼出完整图案。先从四角星开始吧！"
+        },
+        {
+          "url": "http://game.penggeai.com/vendor/scrollzz/index.html",
+          "text": "1\n2\n3\n4\n5\n几何转转拼图\n\nSCROLLZZ\n\n中文 Português\nSCROLLZZ\n\nDiscord\nEmail\nGithub\nTwitter\nYoutube\n\nr"
+        }
+      ]
+    },
+    {
+      "game": "memory-match",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/memory-match",
+          "text": "返回\n动物翻翻乐\n入门 · 4 对\n挑战 · 6 对\n\n每次翻开两张卡片，找到相同的动物。不用抢时间，慢慢记住它们的位置。\n\n已找到 0 / 4 对 · 翻了 0 次\n\n？\n？\n？"
+        }
+      ]
+    },
+    {
+      "game": "pattern-play",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/pattern-play",
+          "text": "返回\n图案接龙\n\n图案会按照同一个顺序重复。找一找，应该接上哪一个？\n\n第 1 题\n\n🍎\n🦋\n🍎\n🦋\n🍎\n🦋\n？\n\n观察前面的图案，下一个是什么？\n\n🍎\n⭐\n🦋\n下一题"
+        }
+      ]
+    },
+    {
+      "game": "tic-tac-toe",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/tic-tac-toe",
+          "text": "返回\n亲子井字棋\n\n邀请爸爸妈妈或小伙伴一起玩。⭕ 和 ❌ 轮流点击，横着、竖着或斜着连成三个就获胜。\n\n轮到 ⭕ 点击一个空格\n\n·\n·\n·\n·\n·\n·\n·\n·\n·\n再玩一局"
+        }
+      ]
+    },
+    {
+      "game": "gomoku",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/gomoku",
+          "text": "返回\n五子棋\n黑方落子\n重新开始\n\n两人轮流落子，横、竖或斜线率先连成五颗棋子的一方获胜。"
+        }
+      ]
+    },
+    {
+      "game": "flight-chess",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/flight-chess",
+          "text": "返回\n中国飞行棋 · 极简飞行棋"
+        },
+        {
+          "url": "http://game.penggeai.com/vendor/aeroplane-chess/index.html",
+          "text": "极简飞行棋\n游戏小贴士\n人机对战 \n本地多人 \n规则说明\n加入房间\n×\n   \n请输入4位字母房间号\n取消 加入\n© 2026 极简飞行棋 Made with  by @ZTMYO"
+        }
+      ]
+    },
+    {
+      "game": "adventure-chess",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/adventure-chess",
+          "text": "返回\n蛇梯冒险棋\n\n动态蛇梯棋盘 · 角色移动 · 骰子音效 · 胜利庆祝"
+        },
+        {
+          "url": "http://game.penggeai.com/vendor/openboard/index.html?game=snake-ladder",
+          "text": "🎯\nSnake & Ladder\n\nClassic dice adventure — luck decides all!\n\nBOARD THEME\n🎲\nClassic\n🌿\nJung"
+        }
+      ]
+    },
+    {
+      "game": "go",
+      "overflow": false,
+      "frames": [
+        {
+          "url": "http://game.penggeai.com/#/games/go",
+          "text": "返回\n九路围棋 · BesoGo\n\n真实棋子纹理 · 落子阴影 · 棋谱回退 · 死活标记"
+        },
+        {
+          "url": "http://game.penggeai.com/vendor/besogo/index.html",
+          "text": "九路围棋\n黑方落子\nA\nA\nB\nB\nC\nC\nD\nD\nE\nE\nF\nF\nG\nG\nH\nH\nJ\nJ\n9\n9\n8\n8\n7\n7\n6\n6\n5\n5\n4\n4\n3\n3\n2\n2\n1\n1\n停一手\n悔棋\n重"
+        }
+      ]
+    }
+  ],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap",
+    "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2"
+  ]
+}

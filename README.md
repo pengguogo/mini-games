@@ -2,7 +2,7 @@
 
 从 [Mimi 启蒙乐园](https://github.com/pengguogo/english-app) 抽离的独立浏览器小游戏专区。9 款游戏，无广告，无需登录；纯静态部署，不依赖学习平台或后端。
 
-部署入口：http://game.penggeai.com （首次部署与 DNS 配置完成后可用）
+部署入口：http://game.penggeai.com （已上线）
 
 ```sh
 npm ci
@@ -19,7 +19,7 @@ npm run preview
 
 ## 自动部署
 
-推送 main 自动触发 GitHub Actions：npm ci → 玩法测试 → 生产构建 → SCP 上传 → 原子切换版本 → Nginx 与 HTTP 响应检查。视频和 Markdown 更新不触发部署，可手动 workflow_dispatch。
+推送 main 自动触发 GitHub Actions：npm ci → 玩法测试 → 生产构建 → SCP 上传 → 原子切换版本 → Nginx 与 HTTP 响应检查。每次推送 main 均触发部署，也可手动 workflow_dispatch。
 
 在仓库 Settings → Secrets and variables → Actions 中配置与原项目相同的 ALIYUN_HOST、ALIYUN_USER、ALIYUN_PASSWORD。GitHub 无法读取原仓库 Secret 的值；请在新仓库重新设置，密码不进入源码或聊天。服务器需已有 Nginx，部署用户需有 /var/www 与 Nginx 管理权限。
 

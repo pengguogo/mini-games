@@ -1,0 +1,12 @@
+{
+  "duration": 49.6,
+  "wavSampleRate": 24000,
+  "wavChannels": 1,
+  "rms": 2800.6219104863962,
+  "peak": 26354,
+  "cover": [
+    1080,
+    1920
+  ],
+  "videoDecode": "passed"
+}
