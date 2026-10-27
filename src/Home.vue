@@ -13,7 +13,13 @@ const games = [
  ['adventure-chess','蛇梯冒险棋','爬上梯子，小心滑下来的蛇。','棋类','⚄'],
  ['go','九路围棋','在小棋盘上，体验黑白落子。','棋类','○'],
  ['doudizhu','经典斗地主','和两位本地 AI 叫分、出牌、争当赢家。','棋牌','🂡'],
- ['mahjong-solitaire','麻将连连看','找出两张可移动的同类麻将牌。','棋牌','🀄']
+ ['mahjong-solitaire','麻将连连看','找出两张可移动的同类麻将牌。','棋牌','🀄'],
+ ['2048','2048','滑一滑，相同数字合在一起。','益智','2048'],
+ ['minesweeper','Emoji 扫雷','数字是线索，避开藏起来的雷。','益智','💣'],
+ ['xiangqi','中国象棋','楚河汉界，和本地 AI 下一盘。','棋类','帥'],
+ ['tetris','俄罗斯方块','怀旧掌机风，消掉一整行。','益智','▦'],
+ ['sudoku','数独','九宫格里，每个数字只出现一次。','益智','9'],
+ ['snake','贪吃蛇','吃得越多，身体越长。','益智','🐍']
 ]
 const visible = computed(() => games.filter(g => category.value === '全部' || g[3] === category.value))
 </script>
@@ -21,5 +27,5 @@ const visible = computed(() => games.filter(g => category.value === '全部' || 
 <header><a href="#/" class="wordmark"><b>P.</b> 鹏哥小游戏</a><span>下班后，玩一会儿。</span></header>
 <section class="hero"><div><p class="eyebrow">SMALL GAMES. SIMPLE JOY.</p><h1>给快乐<br>留一点<em>空白。</em></h1><p class="desc">没有广告打断，也不用先登录。<br>选一个喜欢的小游戏，轻松玩一局。</p><div class="pills"><span>无广告</span><span>无需登录</span><span>浏览器直接玩</span></div><RouterLink class="cta" to="/games/picture-puzzle">从一幅拼图开始 ↗</RouterLink></div><RouterLink class="hero-art" to="/games/picture-puzzle"><img :src="`${base}images/games/woodland-puzzle.webp`" alt="童话拼图真实游戏插画"><p>01 / 童话拼图 <b>点开就玩 ↗</b></p></RouterLink></section>
 <section><div class="library-head"><div><p class="eyebrow">YOUR LITTLE PLAYGROUND</p><h2>今天，玩点什么？<small>{{ games.length }} 款小游戏</small></h2></div><nav aria-label="游戏分类"><button v-for="c in ['全部','拼图','益智','棋类','棋牌']" :key="c" :class="{active:category===c}" @click="category=c">{{c}}</button></nav></div><div class="cards"><RouterLink v-for="g in visible" :key="g[0]" :to="'/games/'+g[0]" class="card"><div class="card-art" :class="'art-'+g[3]">{{g[4]}}</div><div class="card-copy"><small>{{g[3]}}</small><h3>{{g[1]}} <span>↗</span></h3><p>{{g[2]}}</p></div></RouterLink></div></section>
-<footer><p>少一点打扰，多一点快乐。</p><a href="https://github.com/pengguogo/english-app" target="_blank" rel="noopener">源项目 · english-app ↗</a><details><summary>开源来源与署名</summary><p>玩法摘自 Mimi 启蒙乐园。斗地主：Hanbin-Zhang-JPN/classic-doudizhu；麻将连连看：ScriptRaccoon/mahjong-solitaire；飞行棋：ZTMYO/MinimalistAeroplaneChess；蛇梯棋：zynocode/openboard-arcade；围棋：yewang/besogo；几何拼图：refusado/scrollzz。完整许可证随源码保留；围棋棋子素材为 Andreas Tarnowsky / go-assets，CC BY-SA 4.0。</p></details></footer>
+<footer><p>少一点打扰，多一点快乐。</p><a href="https://github.com/pengguogo/english-app" target="_blank" rel="noopener">源项目 · english-app ↗</a><details><summary>开源来源与署名</summary><p>玩法摘自 Mimi 启蒙乐园。斗地主：Hanbin-Zhang-JPN/classic-doudizhu；麻将连连看：ScriptRaccoon/mahjong-solitaire；飞行棋：ZTMYO/MinimalistAeroplaneChess；蛇梯棋：zynocode/openboard-arcade；围棋：yewang/besogo；几何拼图：refusado/scrollzz；2048：gabrielecirulli/2048；Emoji 扫雷：muan/emoji-minesweeper；中国象棋：itlwei/Chess；俄罗斯方块：Binaryify/vue-tetris；数独：andreynering/sudoku；贪吃蛇：patorjk/JavaScript-Snake。完整许可证随源码保留；围棋棋子素材为 Andreas Tarnowsky / go-assets，CC BY-SA 4.0。</p></details></footer>
 </main></template>

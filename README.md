@@ -1,6 +1,6 @@
 # 鹏哥小游戏
 
-从 [Mimi 启蒙乐园](https://github.com/pengguogo/english-app) 抽离并扩展的独立浏览器小游戏专区。11 款游戏，无广告，无需登录；纯静态部署，不依赖学习平台或后端。
+从 [Mimi 启蒙乐园](https://github.com/pengguogo/english-app) 抽离并扩展的独立浏览器小游戏专区。17 款游戏，无广告，无需登录；纯静态部署，不依赖学习平台或后端。
 
 部署入口：http://game.penggeai.com （已上线）
 
@@ -13,7 +13,7 @@ npm run build
 npm run preview
 ```
 
-童话拼图、几何拼图、动物翻翻乐、找规律、井字棋、五子棋、飞行棋、蛇梯冒险棋、九路围棋、经典斗地主、麻将连连看。斗地主为玩家对两位本地 AI 的叫分制单机玩法；麻将连连看是麻将牌配对消除，不是四人麻将。所有游戏均不提供充值、下注或联网房间。围棋为棋盘编辑与落子，不承诺自动裁判或 AI。
+童话拼图、几何拼图、动物翻翻乐、找规律、井字棋、五子棋、飞行棋、蛇梯冒险棋、九路围棋、经典斗地主、麻将连连看、2048、Emoji 扫雷、中国象棋、俄罗斯方块、数独、贪吃蛇。斗地主为玩家对两位本地 AI 的叫分制单机玩法；麻将连连看是麻将牌配对消除，不是四人麻将。所有游戏均不提供充值、下注或联网房间。围棋为棋盘编辑与落子，不承诺自动裁判或 AI。中国象棋提供三档本地 AI 和三个残局；2048 最佳成绩只存于本机浏览器。
 
 首页插画由源项目 PNG 转为 WebP，约 227 KB；首页 JS 约 39 KB gzip。每款游戏按路由加载，首页不会下载第三方棋盘引擎。实际加载速度取决于网络、设备与服务器。
 
@@ -31,7 +31,7 @@ DNS：添加 game 的 A 记录指向 ALIYUN_HOST，按原项目服务器 IP 配�
 
 本项目遵循源项目 LICENSE。第三方组件保持各自许可证，详见 docs 与 public/vendor/*/LICENSE。BesoGo 棋子图片为 Andreas Tarnowsky 的 go-assets，CC BY-SA 4.0。
 
-斗地主使用 Hanbin-Zhang-JPN/classic-doudizhu；麻将连连看使用 ScriptRaccoon/mahjong-solitaire，并把 jQuery 固定为本地 3.5.1 MIT 文件。飞行棋使用 ZTMYO/MinimalistAeroplaneChess（当前组件目录为 aeroplane-chess）；蛇梯冒险棋使用 OpenBoard Arcade。`docs/game-open-source-sources.md` 保留固定提交、许可证与未接入候选的审计记录，实际入口以 `src/views` 中的路径为准。
+斗地主使用 Hanbin-Zhang-JPN/classic-doudizhu；麻将连连看使用 ScriptRaccoon/mahjong-solitaire，并把 jQuery 固定为本地 3.5.1 MIT 文件。飞行棋使用 ZTMYO/MinimalistAeroplaneChess（当前组件目录为 aeroplane-chess）；蛇梯冒险棋使用 OpenBoard Arcade。2048 使用 gabrielecirulli/2048；扫雷使用 muan/emoji-minesweeper（已移除统计脚本与外部字体）；中国象棋使用 itlwei/Chess；俄罗斯方块使用 Binaryify/vue-tetris（远程精灵图已转存本地）；数独使用 andreynering/sudoku；贪吃蛇使用 patorjk/JavaScript-Snake。`docs/game-open-source-sources.md` 保留固定提交、许可证与未接入候选的审计记录，实际入口以 `src/views` 中的路径为准。
 
 ## 本期视频
 
